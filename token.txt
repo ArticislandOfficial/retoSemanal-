@@ -1,0 +1,3 @@
+Your token is: 49e87637ca345fcdb6ecde33c4d95ffdf53a7312
+You can now try, for instance, to get the beijing feed using:
+https://api.waqi.info/feed/here/?token=49e87637ca345fcdb6ecde33c4d95ffdf53a7312
