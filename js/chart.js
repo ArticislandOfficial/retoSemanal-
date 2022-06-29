@@ -1,28 +1,5 @@
-const apiprueba = `https://api.waqi.info/feed/here/?token=49e87637ca345fcdb6ecde33c4d95ffdf53a7312/attributions`;
-
-const peticion = fetch(apiprueba)
-  .then((result) => result.json())
-  .then((dataIaqui) => {
-    console.log(dataIaqui);
-  });
-// console.log(apiprueba.data.iaqi);
-
-// const getData = () => {
-//   // padre
-//   const books = async () => {
-//     const resp = await fetch(APIprueba, {
-//       method: "GET", // traer elementlos
-//     });
-//     const data = await resp.json();
-//     showCustomers(data); // function
-//     showChart(data); // function
-//   };
-//   books();
-// };
-
-console.log("Graficas");
-const ctx = document.getElementById("myChart").getContext("2d");
-const myChart = new Chart(ctx, {
+export const ctx = document.getElementById("myChart").getContext("2d");
+export  const myChart = new Chart(ctx, {
   type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
